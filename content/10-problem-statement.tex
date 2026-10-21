@@ -7,35 +7,27 @@
 
 \vorspannabschnitt{Ausgangslage}
 
-Beschreibt hier in wenigen Sätzen, welches Problem im Ausgangszustand besteht,
-wen es betrifft und warum eine technische Lösung sinnvoll ist.
+Farmers have to walk or drive long distances to check the conditions of each field. Air temperature, air humidity and air quality are measured manually. Every new measurement repeats this effort, costs time and rules out continuous monitoring. Changes in conditions are therefore noticed late.
 
 \vorspannabschnitt{Untersuchungsanliegen der individuellen Themenstellungen}
 
 \vorspannunterpunkt{1) Teilbereich A}
-Was untersucht dieses Teilprojekt? Formuliert die Fragestellung, nicht die
-Lösung.
+Environment sensors with varying functionalities are safely stored around the fields. The front-end needs to be designed and developed to be able to read all necessary incoming data from the devices. This data will be hosted locally on a server that can be deployed at the site.
 
 \vorspannunterpunkt{2) Teilbereich B}
-\dots
-
-\vorspannunterpunkt{3) Teilbereich C}
-\dots
+The mesh-network that is made up from different LoRa capable devices needs designing and examinations. In addition, encrypted communication between the radio devices will be configured to prevent any threat actors to modify signals. The server structure with a back-end centralizes, processes, and stores the sensor data.
 
 \vorspannabschnitt{Zielsetzung}
-
-Ein bis zwei Sätze: Was soll am Ende der Arbeit vorliegen?
+The goal is to create an encrypted radio-based network that can be assisted with existing infrastructure but is fundamentally independent from it (e.g. the Internet). This lets users self govern their network connectivity for connected sensor devices. A dashboard will be able to visually display all important live data from the server that have been sent out by sensors.
 
 \vorspannabschnitt{Geplantes Ergebnis der individuellen Themenstellungen}
 
 \vorspannunterpunkt{1) Teilbereich A}
-Welches konkrete, überprüfbare Ergebnis liefert dieses Teilprojekt ab?
+LEUSKA: The environment sensors measure air temperature, air quality, humidity and barometric pressure at a defined interval and pass the readings to the connected Meshtastic node. The data reaches the server via the mesh network and is shown on the dashboard as current values and history charts. The dashboard is clearly structured and usable on desktop and mobile devices.
 
 \vorspannunterpunkt{2) Teilbereich B}
-\dots
+TREMURICI: The Meshtastic nodes are configured and placed so that the network covers all fields and stays functional if a single node fails. This is verified by tests (range, node failure, packet loss rate). The back-end receives, validates, stores and formats the sensor data and provides it to the dashboard via an API. The server is adequately secured against data loss and manipulation.
 
-\vorspannunterpunkt{3) Teilbereich C}
-\dots
 
 \vorspannabschnitt{Meilensteine}
 
@@ -45,12 +37,13 @@ Welches konkrete, überprüfbare Ergebnis liefert dieses Teilprojekt ab?
     \toprule
     \bfseries Meilenstein & \bfseries Datum \\
     \midrule
-    Analyse der Ausgangslage und Anforderungen & 30.09.2026 \\
-    Erstellung der Konzepte                    & 31.10.2026 \\
-    Implementierung der Systemkomponenten      & 30.11.2026 \\
-    Test der Systemkomponenten                 & 15.01.2027 \\
-    Integration des Gesamtsystems              & 15.02.2027 \\
-    Verfassen der Dokumentation                & 15.03.2027 \\
-  Abgabe der Diplomarbeit                    & 01.04.2027 \\
+    Submission of application	& 25.09.2026 \\
+    Analysis of components and test environments completed	& 23.10.2026 \\
+    Proof of concept: sensor data reaches a test server via Meshtastic	& 03.11.2026 \\
+    Mesh network, gateway and back-end including API implemented	& 25.01.2027 \\
+    Front-end (UI/UX) completed and connected to the live back-end	& 22.02.2027 \\
+    Integration and field tests completed, results documented	& 19.03.2027 \\
+    Documentation finalized	& 23.04.2027 \\
+    Final submission of the diploma thesis	& 03.05.2027 \\
   \bottomrule
 \end{tabular}
