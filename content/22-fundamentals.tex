@@ -49,3 +49,33 @@ LoRa stands for Long Range and this type of wireless communication is designed f
     \end{itemize}
     & 500 mW 
 \end{tabular}
+
+\pagebreak
+\section{Frontend--Backend Communication}
+\abschnittsautor{D. E. Leuska}
+
+The dashboard is the frontend of the system. It runs in a browser and presents
+sensor readings to the user. The backend runs on the local server and receives
+readings from the gateway. PHP can process server requests and return either
+complete HTML pages or data for a separate frontend
+\cite{php-syntax-html,gfg-php-introduction}. In this design, HTML and CSS
+define the page while JavaScript updates its displayed values.
+
+The frontend communicates with the PHP backend by sending HTTP requests to an
+application programming interface (API). The API defines which readings can
+be requested and how the response is structured. The dashboard can request
+recent readings without accessing the database directly. The server can
+receive submitted values through PHP request variables, but it must validate
+them before use \cite{php-tutorial-forms,w3schools-php-forms}.
+
+JSON is a suitable format for sensor data because it represents structured
+records that JavaScript can read. PHP provides \texttt{json\_encode} to
+convert server data into JSON \cite{php-json-encode}. Each response should
+identify the sensor, measurement time and units. This consistent format lets
+the dashboard display different sensors in the same way.
+
+The backend must handle invalid requests and unavailable data explicitly.
+Database values should be passed through prepared statements rather than
+inserted into SQL text \cite{php-pdo-prepared}. The dashboard should show
+when the server cannot be reached or a reading is out of date. Displaying the
+measurement time prevents old data from appearing current.
