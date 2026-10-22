@@ -47,3 +47,40 @@ A directional antenna can be used for specific circumstances if the location of 
 \end{figure}
 
 Figure \ref{abb:node} is a simple yet perfectly usable example of a Heltec V3 board with a battery and an omnidirectional antenna.
+
+\pagebreak
+\section{PHP Backend and Dashboard Integration}
+\abschnittsautor{D. E. Leuska}
+
+The planned data flow begins when sensors send measurements through the radio
+network to the gateway. The server receives these measurements and makes them
+available to a PHP endpoint. The browser requests readings from this endpoint
+over the local network. This keeps the dashboard independent from the radio
+devices and avoids dependence on an external web service.
+
+The endpoint can return recent measurements as JSON. Each record should
+contain a sensor identifier, a measurement time and values with clear units.
+PHP's \texttt{json\_encode} function can create this response from data read
+by the server \cite{php-json-encode}. The response format should remain the
+same for each sensor so the dashboard can display readings consistently.
+
+The browser can request the endpoint and use the returned JSON to update the
+dashboard. It can repeat this request at a chosen interval to show new
+measurements. This polling method is simple to test, although readings appear
+only after the next request. The dashboard should show an error when a request
+fails and should display the time of the latest reading. It should never
+present an old measurement as current.
+
+The PHP endpoint must validate requested sensor identifiers and other input.
+If it queries a database, it should use prepared statements to pass values
+safely to the database \cite{php-pdo-prepared}. It should distinguish an
+unknown sensor from a sensor that has no recent readings. It should also
+return a clear error when the server cannot provide data.
+
+Integration can be checked by requesting the endpoint and confirming that
+the response contains the expected fields and units. The dashboard can then
+be checked to confirm that it displays those values and reports unavailable
+data clearly. Testing empty results and unknown sensors helps verify that the
+interface does not confuse missing data with a valid measurement. This
+approach connects the PHP backend to the frontend through a small, documented
+API that can operate on the project's local network.
