@@ -119,6 +119,191 @@
       \verb https://www.example.org/dokumentation
       \endverb
     \endentry
+    \entry{php-syntax-html}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed7f859c52f66d0f797036b65e9ef279}{%
+           family={{The PHP Documentation Group}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{bibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorbibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authornamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Escaping from HTML}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.php.net/manual/en/language.basic-syntax.phpmode.php
+      \endverb
+      \verb{url}
+      \verb https://www.php.net/manual/en/language.basic-syntax.phpmode.php
+      \endverb
+    \endentry
+    \entry{gfg-php-introduction}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PHP Introduction}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/php/php-introduction/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/php/php-introduction/
+      \endverb
+    \endentry
+    \entry{php-tutorial-forms}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed7f859c52f66d0f797036b65e9ef279}{%
+           family={{The PHP Documentation Group}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{bibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorbibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authornamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dealing with Forms}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.php.net/manual/en/tutorial.forms.php
+      \endverb
+      \verb{url}
+      \verb https://www.php.net/manual/en/tutorial.forms.php
+      \endverb
+    \endentry
+    \entry{w3schools-php-forms}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=bd21525362368ddbd79358cdcf66005d}{%
+           family={{W3Schools}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{fullhash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{fullhashraw}{bd21525362368ddbd79358cdcf66005d}
+      \strng{bibnamehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authorbibnamehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authornamehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authorfullhash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authorfullhashraw}{bd21525362368ddbd79358cdcf66005d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PHP Form Handling}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.w3schools.com/php/php_forms.asp
+      \endverb
+      \verb{url}
+      \verb https://www.w3schools.com/php/php_forms.asp
+      \endverb
+    \endentry
+    \entry{php-json-encode}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed7f859c52f66d0f797036b65e9ef279}{%
+           family={{The PHP Documentation Group}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{bibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorbibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authornamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \field{extraname}{3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{json\_encode}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.php.net/manual/en/function.json-encode.php
+      \endverb
+      \verb{url}
+      \verb https://www.php.net/manual/en/function.json-encode.php
+      \endverb
+    \endentry
+    \entry{php-pdo-prepared}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed7f859c52f66d0f797036b65e9ef279}{%
+           family={{The PHP Documentation Group}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{fullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{bibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorbibnamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authornamehash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhash}{ed7f859c52f66d0f797036b65e9ef279}
+      \strng{authorfullhashraw}{ed7f859c52f66d0f797036b65e9ef279}
+      \field{extraname}{4}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Prepared Statements and Stored Procedures}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.php.net/manual/en/pdo.prepared-statements.php
+      \endverb
+      \verb{url}
+      \verb https://www.php.net/manual/en/pdo.prepared-statements.php
+      \endverb
+    \endentry
     \entry{repeater-image}{online}{}{}
       \name{author}{1}{}{%
         {{hash=f6c94a695749fae72429f0ccf558c574}{%
@@ -133,8 +318,8 @@
       \strng{authornamehash}{f6c94a695749fae72429f0ccf558c574}
       \strng{authorfullhash}{f6c94a695749fae72429f0ccf558c574}
       \strng{authorfullhashraw}{f6c94a695749fae72429f0ccf558c574}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{MeshCore Web Flasher: How to Flash and Set up a Repeater}
@@ -161,8 +346,8 @@
       \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{AS17-148-22727 (Blue Marble)}
@@ -179,6 +364,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{example-figure}
 \endrefsection
 \endinput
 
