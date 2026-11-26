@@ -40,10 +40,49 @@ The used Meshtastic/Meshcore devices are essentially just radios, this means tha
 A directional antenna can be used for specific circumstances if the location of the nodes allows it. This would allow for communications over much greater distances.
 
 \begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.75\linewidth]{images/repeater.jpg}
-  \caption{outdoor node \cite{repeater-image}}
-  \label{abb:node}
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/repeater.jpg}
+    \caption{outdoor node \cite{repeater-image}}
+    \label{abb:node}
 \end{figure}
 
 Figure \ref{abb:node} is a simple yet perfectly usable example of a Heltec V3 board with a battery and an omnidirectional antenna.
+
+\pagebreak
+\section{Dashboard Integration}
+\subsection{Concept}
+\abschnittsautor{D. E. Leuska}
+
+The planned data flow begins when sensors automatically send measurements
+at regular intervals over the radio network to the gateway. The gateway
+forwards these measurements to the server, which captures and stores them.
+The server then makes the captured readings available to a PHP endpoint.
+The browser requests a snapshot of these readings from the endpoint over the
+local network. This keeps the dashboard independent from the radio devices
+and avoids dependence on an external web service. In \ref{abb:ex1}, a visualization 
+of the concept can be seen.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/example-figure.pdf}
+    \caption{example \cite{example-figure}}
+    \label{abb:ex1}
+\end{figure}
+
+The endpoint can return recent measurements as JSON. Each record should
+contain a sensor identifier, a measurement time and values with clear units.
+PHP's \texttt{json\_encode} function can create this response from data read
+by the server. The response format should remain the
+same for each sensor so the dashboard can display readings consistently \cite{php-json-encode}.
+
+The browser queries the server and uses the returned JSON to update the
+dashboard. It can load the latest captured measurements when the page opens or
+when the user explicitly refreshes the view. The dashboard should display an error message
+in case a request fails and should also display the time of the latest successful reading. It
+should never present an old measurement as current.
+
+The PHP endpoint must validate requested sensor identifiers and other input.
+If it queries a database, it should use prepared statements to pass values
+safely to the database. It should distinguish an
+unknown sensor from a sensor that has no recent readings. It should also
+return a meaningful error message when the server cannot provide data \cite{php-pdo-prepared}.
