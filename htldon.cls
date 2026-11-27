@@ -11,7 +11,7 @@
 \ProvidesClass{htldon}[2026/08/12 v1.0 Diplomarbeit HTL Donaustadt IT]
 
 \RequirePackage{etoolbox}
-
+\usepackage{tabularray}
 % =====================================================================
 % Class options
 % =====================================================================

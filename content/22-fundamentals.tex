@@ -49,6 +49,44 @@ LoRa stands for Long Range and this type of wireless communication is designed f
     \end{itemize}
     & 500 mW 
 \end{tabular}
+\pagebreak
+
+
+\subsection{LoRa Networking Protocol Options}
+\abschnittsautor{J. Tremurici}
+There are three options available for transmitting LoRa packets through a network, Meshtastic, Meshcore, LoRaWAN. 
+
+Meshtastic is an open-source, decentralized off-grid mesh networking protocol built on LoRa radio technology. It enables low-power, long-range text communication between devices without relying on cell towers, Wi-Fi, or the internet.
+
+MeshCore is another LoRa mesh protocol built with a different philosophy in mind. It focuses on high-efficiency, structured routing for larger-scale deployments.
+
+Both utilize LoRa radio technology to send text messages and GPS coordinates without cellular towers, Wi-Fi, or the internet. Both create a “mesh,” meaning devices can bounce messages off each other to extend the network’s overall range. Both can run on the same high-performance LoRa hardware.
+
+LoRaWAN is a wireless communication protocol designed for IoT applications that require long-range connectivity with very low power consumption. An overview of the 3 can be found in TABLEWWW
+\begin{table}[h]
+\centering
+\begin{tblr}{
+  width = \linewidth,
+  colspec = {Q[110]Q[287]Q[256]Q[287]},
+  row{1} = {font=\bfseries},
+  cell{2}{1} = {font=\bfseries},
+  cell{3}{1} = {font=\bfseries},
+  cell{4}{1} = {font=\bfseries},
+  cell{5}{1} = {font=\bfseries},
+  cell{6}{1} = {font=\bfseries},
+  hlines,
+  vlines,
+}
+Feature / Attribute  & Meshtastic                                                               & Meshcore                                                        & LoRaWAN®                                                                       \\
+Network Architecture & Decentralized, peer-to-peer                                              & Decentralized, Hierarchical                                     & Centralized, star topology                                                     \\
+Primary Use Cases    & Off-grid communication, emergency, disaster response, outdoor adventures & Off-grid communication, stationary nodes for a dedicated area   & Distributed IoT deployments, for environmental data.                           \\
+Infrastructure       & Any Meshtastic device can be a relay                                     & Stationary repeaters required                                   & Requires LoRaWAN gateways to forward the data to cloud                         \\
+Scalability          & localized groups                                                         & Planned network in that area                                    & Highly scalable for large-scale IoT deployments with thousands of devices      \\
+Network Costs        & 100\% Free  Open-Source                                                  & Open-Source firmware, with some freemium/commercial client apps & Potential network costs (e.g., gateway connectivity fees, network server fees) 
+\end{tblr}
+\caption{protocol comparison}
+\label{tab:protocol-comparison}
+\end{table}
 
 \pagebreak
 \section{PHP Frontend}
