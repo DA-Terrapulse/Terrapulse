@@ -59,14 +59,13 @@ sensor readings to the user. The backend runs on a local server and receives
 readings from the gateway. PHP can process server requests and return either
 complete HTML pages or data for a separate frontend. In this design, HTML and CSS
 define the page while JavaScript updates its displayed values \cite{php-syntax-html,gfg-php-introduction}. 
-An example can of this is displayed in fig. \ref{abb:example-fig1}.
+An example of this is displayed in fig. \ref{abb:fe-conc-fig}.
 
-!!!!!!!!!! TEMP TEMP TEMP !!!!!!!!!!!!!
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\linewidth]{images/example-figure.pdf}
-    \caption{example \cite{example-figure}}
-    \label{abb:example-fig1}
+    \includegraphics[width=0.75\linewidth]{images/frontend-concept_figure.png}
+    \caption{Visualization of frontend concept}
+    \label{abb:fe-conc-fig}
 \end{figure}
 
 The frontend communicates with the PHP backend by sending HTTP requests to an
@@ -100,50 +99,46 @@ strategies to solve this case are Polling and Interrupt.
 This solution is a protocol that a server can use to question each and every device individually
 until one of them needs the servers attention because of any new sensor reading updates. On
 one hand, this variant is easy to implement, while on the other hand it consumes more
-ressources and is extremely inefficient. How polling works is shown in fig. \ref{abb:example-fig2}.
-
-!!!!!!!!!! TEMP TEMP TEMP !!!!!!!!!!!!!
+ressources and is extremely inefficient. How polling works is shown in fig. \ref{abb:poll-exp-fig}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\linewidth]{images/example-figure.pdf}
-    \caption{example \cite{example-figure}}
-    \label{abb:example-fig2}
+    \includegraphics[width=0.75\linewidth]{images/polling-explained_figure.png}
+    \caption{Polling explained}
+    \label{abb:poll-exp-fig}
 \end{figure}
 
 \pagebreak
 \subsubsection{Interrupt}
-Unlike polling works, interrupt is a mechanism that briefly stops the server at any time when
-a new signal arrives. The server quickly turns to an interrupt handler, also known as
-interrupt service handlers (ISR) and continues after control is handed over. Although it feels
-near-instant, too much task to be handled can make latency noticeable.
-How interrupt works is shown in fig. \ref{abb:example-fig3}.
 
-!!!!!!!!!! TEMP TEMP TEMP !!!!!!!!!!!!!
+Unlike polling works, interrupt is a hardware mechanism that briefly stops the server's CPU at 
+any time when a new signal arrives. The server quickly turns to an interrupt handler, also known 
+as interrupt service routine (ISR) and continues its halted tasks after the interrupt is resolved. 
+Although it feels near-instant, a handling overload can make latency noticeable.
+How interrupt works is shown in fig. \ref{abb:irq-exp-fig}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\linewidth]{images/example-figure.pdf}
-    \caption{example \cite{example-figure}}
-    \label{abb:example-fig3}
+    \includegraphics[width=0.75\linewidth]{images/irq-explained-figure.png}
+    \caption{Showcase of interrupt}
+    \label{abb:irq-exp-fig}
 \end{figure}
 
 \subsubsection{Comparison}
 To weigh out the advantages and disadvantages both strategies give, tab. \ref{tab:comparison}
 showcases the differences between polling and interrupt.
 
-!!!!!!!!!! TEMP TEMP TEMP !!!!!!!!!!!!!
-
 \begin{table}[htbp]
-    \caption{Polling and Interrupt comparison}
+    \caption{Polling and interrupt comparison}
     \label{tab:comparison}
     \centering
-    \begin{tabular}{@{}p{0.45\linewidth}p{0.2\linewidth}p{0.25\linewidth}@{}}
+    \begin{tabular}{@{}p{0.45\linewidth}p{0.45\linewidth}p{0.45\linewidth}@{}}
         \toprule
         \bfseries Polling & \bfseries Interrupt \\
         \midrule
-            Argument 1 A & Argument 1 B \\
-            Argument 2 A & Argument 2 B \\
+            protocol & hardware-based \\
+            Server actively checks if devices need service & Devices are actively asking the server for service\\
+            Check works periodically or in intervals & Can happen at any time \\
         \bottomrule
     \end{tabular}
 \end{table}

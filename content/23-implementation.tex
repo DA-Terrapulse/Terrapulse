@@ -59,14 +59,14 @@ forwards these measurements to the server, which captures and stores them.
 The server then makes the captured readings available to a PHP endpoint.
 The browser requests a snapshot of these readings from the endpoint over the
 local network. This keeps the dashboard independent from the radio devices
-and avoids dependence on an external web service. In \ref{abb:ex1}, a visualization 
+and avoids dependence on an external web service. In \ref{abb:sens-dash-fig}, a visualization 
 of the concept can be seen.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\linewidth]{images/example-figure.pdf}
-    \caption{example \cite{example-figure}}
-    \label{abb:ex1}
+    \includegraphics[width=0.75\linewidth]{images/sensor-dashboard_figure.png}
+    \caption{Path from sensor to user dashboard}
+    \label{abb:sens-dash-fig}
 \end{figure}
 
 The endpoint can return recent measurements as JSON. Each record should
