@@ -49,6 +49,25 @@ A directional antenna can be used for specific circumstances if the location of 
 Figure \ref{abb:node} is a simple yet perfectly usable example of a Heltec V3 board with a battery and an omnidirectional antenna.
 
 \pagebreak
+\subsection{Choosing the right Protocol as a Foundation}
+\abschnittsautor{J. Tremurici}
+
+This Project matches a lot of the criteria for the LoRaWAN option, although because of the already existing avalaible coverage Meshcore may be preferred. To add, Meshcore works better when the project is designed and built from the ground up where the other is better for a bought solution that a company may contract someone for.
+
+On the other hand, Meshtastic is a lot more popular in developement and area coverage. It is very notable for its low barrier to entry and works better for decentralized applications where not all participants plan the Topology, but rather, only have a client node on them. This is because of its "managed flood" routing protocol, where every device can act as a repeater.
+
+Meshcore is built to be unique in that specific aspect. Every Node in the mesh has a set role and only one of those roles, a repeater, can forward messages. It also stores the path inside the packages so the second successful package will be sent only through a dedicated path and not by flooding the entire mesh. This works far more efficient for a planned Network with always-on, fixed infrastructure nodes. Room Servers can also be used for reliability and integrity of the sent client information. These nodes are dedicated bulletin boards. They handle public group chats and store messages for users who are currently offline.
+
+Figure \ref{abb:tastic-core} outlines the differences graphically.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/tastic-vs-core.png}
+    \caption{Routing comparison\footcite{tastic-core-image}}
+    \label{abb:tastic-core}
+\end{figure}
+
+\pagebreak
 \section{Dashboard Integration}
 \subsection{Concept}
 \abschnittsautor{D. E. Leuska}
